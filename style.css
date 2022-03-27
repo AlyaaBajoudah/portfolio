@@ -18,9 +18,6 @@
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 8%, 15%);
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
@@ -172,6 +169,7 @@ section{
 .about{
     background-color:rgba(252, 237, 242, 0.747) ;
 }
+/*------------------------------Experince ----------------------------*/
 .card{
     background-color: rgba(252, 237, 242, 0.747);
     width: 19.25em;/*21.25em*/
@@ -185,15 +183,15 @@ section{
 
 .card:hover{
     background-color: lightslategray;
+    margin: 30px;
     content: attr(data-hover);
     width: 19.25em;/*21.25em*/
     box-shadow: 0 5px 25px rgba(1 1 1 /15%);
     border-radius: 80px;
     padding: 25px;/* to make space inside cards border*/
     margin: 15px;/* to make space between cards*/
-   transition: 0.7s ease;/*to make the increase of button smoth and slowly*/
-
-   transform: scale(1.1);/* to increase the button size*/
+    transition: 0.7s ease;/*to make the increase of button smoth and slowly*/
+    transform: scale(1.1);/* to increase the button size*/
     background-color: lightslategray;
     opacity: 1;
     visibility: visible;/*visible*/
@@ -237,7 +235,7 @@ section{
     margin: 10px;
 }
 
-
+/*------------------------------Project ----------------------------*/
 .projects{
     background-color:rgba(252, 237, 242, 0.589);
 }
@@ -259,16 +257,15 @@ section{
     transform: scale(1.1);
 }
 
-button1, button2 {
-    padding-left: 10px;
+.button1, 
+.button2 {
+    width: 23em;
+    padding-left: 60px;
+    padding-right: 60px;
     background-color: #e0c3d7;
 }
 .project-cards:hover{
     opacity: 0.9;
-}
-.project-info{
-    padding: 1em;
-    padding-left: 10px;
 }
 .project-category{
     font-size: 0.8em;
@@ -287,7 +284,7 @@ button1, button2 {
 
 
 
-/*-------------- Skills -----------*/
+/*------------------------------Skills ----------------------------*/
 .section {
     padding: 100px 200px; /* padding: 2rem 0 4rem;     padding: 100px 200px; */
 }
@@ -323,7 +320,7 @@ button1, button2 {
     bottom: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color:  lightslategray;/*var(--body-color)*/
+    background-color:  lightslategray;
 }
 .skills_container{
     row-gap: 0;
@@ -338,7 +335,7 @@ button1, button2 {
 .skills__icon,
 .skills__arrow{
     font-size: 2rem;
-    color: rgb(175, 131, 168);/*var(--first-color)*/
+    color: rgb(175, 131, 168);
 }
 .skills__icon{
     margin-right: var(--mb-0-75);
@@ -373,11 +370,11 @@ button1, button2 {
     border-radius: .25rem;
 }
 .skills__bar{
-    background-color: rgba(252, 237, 242, 0.747); /*   light color  var(--first-color-lighter) */
+    background-color: rgba(252, 237, 242, 0.747); 
 }
 .skills__percentage{
     display: block;
-    background-color: rgba(209, 169, 182, 0.747);  /*   dark color  var(--first-color) */
+    background-color: rgba(209, 169, 182, 0.747);
 }
 .skills__html{
     width: 90%;
@@ -423,11 +420,11 @@ button1, button2 {
     transform: rotate(-180deg);
 }
 
-/*-------------- Update -----------*/
+/*---------------------------- Update ------------------------------*/
 .progress{
     margin: auto;
 }
-/*----------- Experince ----------*/
+/*--------------------------- Experince ----------------------------*/
 .card{
     background-color: rgba(252, 237, 242, 0.747);
     width: 19.25em;/*21.25em*/
@@ -477,124 +474,7 @@ button1, button2 {
   opacity: 1;
   visibility: visible;
 }
-
-/*
-
-.container{
-    height: 100vh;
-    width: 100%;
-    background-image: url(imeges/pexels-eberhard-grossgasteiger-2088170.jpg);
-    background-position: center;
-    background-size: cover;
-    padding-left: 5%;
-    padding-right: 5%;
-    box-sizing: border-box;
-    position: relative;
-}
-
-
-.navbar{
-    width: 100%;
-    height: 15vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-nav{
-    flex: 1;
-    padding-left: 60px;
-}
-nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 0px 20px;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #333;
-}
-.content h1{
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 15px;
-    color: #232d60;
-}
-.content p{
-    font-size: 20px;
-    color: #6a7199;
-}
-.content {
-    margin-left: 10%;
-    margin-top: 10%;
-}
-.content .button {
-    display: inline-block;
-    background: linear-gradient(45deg, #87adfe,#ff77cd);
-    border-radius: 6px;
-    padding: 10px 20px;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: #fff;
-    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
-
-}*/
-
-
-/*
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-.clearfix {
-  display: inline-block;
-}
-
-* html .clearfix {
-  height: 1%;
-}
-.clearfix {
-  display: block;
-}
-
-body {
-  background: #261011;
-  color: #e68a64;
-  margin:0 auto;
-  text-align:center;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  line-height: 187.5%;
-  letter-spacing: 0.01em;
-}*/
-
-/*--------------------------------------------------------------
-	10. Social
---------------------------------------------------------------*/
-/*
-.basr-social-share {
-  position:fixed;
-  top:3em;
-  left:0;
-  right:0;
-  width: 25%;
-  display: block;
-  text-align:center;
-  padding:0 auto;
-  margin:5em auto;
-}*/
-
+/*--------------------------- Contact ----------------------------*/
 .social ul {
   list-style: none;
   margin: auto;
@@ -823,41 +703,5 @@ body {
 }
 .basr-social-share.social li a span {
   display: none;
-}
-
-
-
-/* Center child elements */
-
-.website-counter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-
-/* Styles for website counter container */
-.website-counter {
-  background-color: #ff4957;
-  height: 50px;
-  width: 80px;
-  color: white;
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 25px;
-  margin-top: 10px;
-}
-
-/* Styles for reset button */
-#reset {
-  margin-top: 20px;
-  background-color: #008cba;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 8px 20px;
-  color: white;
-  border: 0;
 }
 

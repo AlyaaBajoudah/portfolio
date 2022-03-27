@@ -1,26 +1,3 @@
-/*----------Website visitor------------*/
-
-var counterContainer = document.querySelector(".website-counter");
-//var resetButton = document.querySelector("#reset");
-var visitCount = localStorage.getItem("page_view");
-
-// Check if page_view entry is present
-if (visitCount) {
-  visitCount = Number(visitCount) + 1;
-  localStorage.setItem("page_view", visitCount);
-} else {
-  visitCount = 1;
-  localStorage.setItem("page_view", 1);
-}
-counterContainer.innerHTML = visitCount;
-
-// Adding onClick event listener
-//resetButton.addEventListener("click", () => {
-  //visitCount = 1;
- // localStorage.setItem("page_view", 1);
- // counterContainer.innerHTML = visitCount;
-//});
-
 
 /*----------Skills------------*/
 const skillsContent = document.getElementsByClassName('skills__content'),
@@ -62,4 +39,3 @@ var options = {
 var chart = new google.visualization.PieChart(document.getElementById('myChart'));
   chart.draw(data, options);
 }
-
